@@ -1,0 +1,82 @@
+/*1-Transformación al pasar el mouse sobre la imagen. */
+.wp-block-image img {
+    /* Agrega la transición */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.wp-block-image:hover img {
+	    /* Aumenta un 3% el tamaño de la imagen */
+    transform: scale(1.03); 
+   /* Efecto de iluminación */
+    filter: brightness(1.2); 
+}
+
+/*2- EFECTO DE ELEVACIÓN Y SOMBRA EN LAS TARJETAS */
+/* Efecto a la cuadrícula del bloque. */
+.ultp-block-9d96fa .ultp-block-items-wrap {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ultp-block-9d96fa .ultp-block-items-wrap:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Transición a la imagen dentro del bloque. */
+.ultp-block-9d96fa .ultp-block-item-content img {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.ultp-block-9d96fa .ultp-block-item-content img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.15);
+}
+
+
+/*3- Añade transición suave al botón del header */
+#main-header .header-button {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+#main-header .header-button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño en 5% */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+}
+
+
+/*4- Añade una transición suave a los botones de acción */
+.kb-buttons-wrap a.kb-button {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.kb-buttons-wrap a.kb-button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño en 5% */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+/*5- Añade una transición suave al botón de Ubicación */
+.wp-block-kadence-advancedbtn .kb-button {
+    /* Transición para que el efecto sea suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.wp-block-kadence-advancedbtn .kb-button:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+}
+
+
+/*6- Efecto pasar mouse botón de la form de Contactanos */
+.kb-form .kadence-blocks-form-field .kb-forms-submit {
+    /* Agregamos una transición para que el efecto sea suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.kb-form .kadence-blocks-form-field .kb-forms-submit:hover {
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra sutil */
+}
